@@ -2,9 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        long miles = SpeedCoverter.toMilesPerHour(20.5);
-        System.out.println("Miles = " + miles);
+        int newScore = calculateScore("Tim", 500);
+        System.out.println("New score is " + newScore);
 
-        SpeedCoverter.printConversion(10.5);
+    }
+    public static int calculateScore(String playerName, int score){
+        System.out.println("Player " + playerName +  " scored " +  score
+                + " points" );
+        return score * 1000;
+    }
+    public static int calculateScore(String playerName, int score){
+        System.out.println("Player " + playerName +  " scored " +  score
+                + " points" );
+        return score * 1000;
     }
 }
