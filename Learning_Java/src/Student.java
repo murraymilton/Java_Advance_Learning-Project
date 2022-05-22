@@ -2,6 +2,7 @@ public class Student {
     private final String id;
     private final String firstName;
     private final String lastName;
+    private final String courseName;
 
     /**
      * The constructor for the student class
@@ -9,10 +10,11 @@ public class Student {
      * @param firstName
      * @param lastName
      */
-    public Student(String id, String firstName,String lastName){
+    public Student(String id, String firstName,String lastName, String courseName){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.courseName = courseName;
     }
 
     /**
@@ -20,12 +22,19 @@ public class Student {
      * @return
      */
     public String getId(){
+
         return id;
     }
     public String getFirstName(){
+
         return firstName;
     }
     public String getLastName(){
-        return lastName;
+        return
+                lastName;
+    }
+
+    public String getCourseName(){
+        return courseName;
     }
 }
