@@ -12,5 +12,8 @@ public class PhoneExceptionTester {
                 System.out.println(ex.getLocalizedMessage());
             }
         }
+        for (int j = 0; j < numbers.length; j++){
+            System.out.println(new Phone("Samsung", numbers[j]));
+        }
     }
 }
